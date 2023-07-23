@@ -1,0 +1,35 @@
+body{
+    background-image: url("wall.jpg");
+    background-size: cover;
+}
+
+.clock{
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.clockface{
+     width: 300px;
+     height: 300px;
+     border: white solid 30px;
+     border-radius: 50%;
+     position: relative;
+}
+
+.hand{
+    height: 2px;
+    background-color: black;
+    border: 1px solid;
+    width: 50%;
+    top:50%;
+    margin: 10px;
+   transition: all 0.05s;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function:  cubic-bezier(0, 2.52, 0.17, 1);
+}
